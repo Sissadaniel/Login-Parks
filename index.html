@@ -1,756 +1,228 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri May 31 2024 19:41:29 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="65fde24a9524450f875ea43f" data-wf-site="65fde2499524450f875ea3ac" lang="es">
+<!DOCTYPE html><!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Fri May 31 2024 19:54:12 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="loginparks.webflow.io" data-wf-page="65fde24a9524450f875ea43f" data-wf-site="65fde2499524450f875ea3ac" lang="es"><head><meta charset="utf-8"/><title>Desarrollo de parques industriales</title><meta content="Adaptamos cada uno a las necesidades particulares de nuestros clientes" name="description"/><meta content="Desarrollo de parques industriales" property="og:title"/><meta content="Adaptamos cada uno a las necesidades particulares de nuestros clientes" property="og:description"/><meta content="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601e6fe925c9f25abf31933_Frame%2036.jpg" property="og:image"/><meta content="Desarrollo de parques industriales" property="twitter:title"/><meta content="Adaptamos cada uno a las necesidades particulares de nuestros clientes" property="twitter:description"/><meta content="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601e6fe925c9f25abf31933_Frame%2036.jpg" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/css/loginparks.webflow.3dc9cf07b.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Playfair Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic","Manrope:300,regular,500,600,700,800","Space Mono:regular,italic,700,700italic"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a132e998cb219e739e586_6601e6f94d9f0da6bceadeb0_Frame%2037.jpg" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a1339a18faabca5f7230e_6601e6fe925c9f25abf31933_Frame%2036.jpg" rel="apple-touch-icon"/><!-- Please keep this css code to improve the font quality-->
+<style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>
 
-<head>
-    <meta charset="utf-8">
-    <title>Desarrollo de parques industriales</title>
-    <meta content="Adaptamos cada uno a las necesidades particulares de nuestros clientes" name="description">
-    <meta content="Desarrollo de parques industriales" property="og:title">
-    <meta content="Adaptamos cada uno a las necesidades particulares de nuestros clientes" property="og:description">
-    <meta content="https://uploads-ssl.webflow.com/65fde2499524450f875ea3ac/6601e6fe925c9f25abf31933_Frame%2036.jpg" property="og:image">
-    <meta content="Desarrollo de parques industriales" property="twitter:title">
-    <meta content="Adaptamos cada uno a las necesidades particulares de nuestros clientes" property="twitter:description">
-    <meta content="https://uploads-ssl.webflow.com/65fde2499524450f875ea3ac/6601e6fe925c9f25abf31933_Frame%2036.jpg" property="twitter:image">
-    <meta property="og:type" content="website">
-    <meta content="summary_large_image" name="twitter:card">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="css/loginparks.webflow.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        WebFont.load({
-            google: {
-                families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Playfair Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic", "Manrope:300,regular,500,600,700,800", "Space Mono:regular,italic,700,700italic"]
-            }
+<!-- You can remove this -->
+<meta name="facebook-domain-verification" content="mlk59ybu44651lzcbhhxjfl8vfae8q" /><style>
+  .shuriken-swiper-wrapper {
+    -webkit-transition-timing-function:linear!important;
+    -o-transition-timing-function:linear!important;
+    transition-timing-function:linear!important;
+   }
+</style></head><body class="body"><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Snippet makes all link elements listed below to inherit color from their parent */
+a, 
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link
+{
+color: inherit;
+}
+
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+  pointer-events: none;
+}
+
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/*Hide focus outline for main content element*/
+    main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/*Reset selects, buttons, and links styles*/
+.w-input, .w-select, a {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
+
+</style></div><main class="main-wrapper"><div data-collapse="medium" data-animation="default" data-duration="400" data-w-id="ebdb72fb-b4ff-9908-afea-6b0ae1851d73" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="navbar2_container text-color-white"><a href="#inicio" class="navbar2_logo-link w-nav-brand"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" width="213" sizes="(max-width: 479px) 35vw, (max-width: 767px) 38vw, (max-width: 991px) 213px, (max-width: 1919px) 14vw, 213px" alt="" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" class="navbar2_logo"/></a><nav role="navigation" id="w-node-ebdb72fb-b4ff-9908-afea-6b0ae1851d77-e1851d73" class="navbar2_menu w-nav-menu"><a href="#inicio" class="navbar2_link w-nav-link">Inicio</a><a href="#naves" class="navbar2_link w-nav-link">Parques industriales</a><a href="#hacemos" class="navbar2_link w-nav-link">¿Qué hacemos?</a><a href="#nosotros" class="navbar2_link w-nav-link">Nosotros</a><a href="#partners" class="navbar2_link w-nav-link">Partners</a></nav><div id="w-node-ebdb72fb-b4ff-9908-afea-6b0ae1851d82-e1851d73" class="navbar2_button-wrapper"><a href="https://www.linkedin.com/company/loginparks/" target="_blank" class="link-block-2 w-inline-block"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/663524eca997e1cd046ee865_LinkedIn_logo_initials.png" loading="lazy" sizes="(max-width: 767px) 19.1953125px, (max-width: 991px) 2vw, (max-width: 1919px) 19.1953125px, 1vw" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/663524eca997e1cd046ee865_LinkedIn_logo_initials-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/663524eca997e1cd046ee865_LinkedIn_logo_initials.png 600w" alt=""/></a><a href="#contacto" id="w-node-ebdb72fb-b4ff-9908-afea-6b0ae1851d83-e1851d73" class="button-secondary is-alternate nav w-button">Contáctanos</a><div class="navbar2_menu-button w-nav-button"><div class="menu-icon2"><div class="menu-icon2_line-top is-alternate"></div><div class="menu-icon2_line-middle is-alternate"><div class="menu-icon_line-middle-inner"></div></div><div class="menu-icon2_line-bottom is-alternate"></div></div></div></div></div></div><div id="inicio" class="section-hero background-color-black"><div class="grid-halves-section"><div id="w-node-e8b4bdcd-f857-646a-7aa2-55bc09234a3d-875ea43f" class="section align-content-center background-color-black"><div class="main-container"><div class="container reduced-width align-center"><div class="header1_content"><div class="margin-bottom margin-small"><h1 class="heading">Bodegas industriales build-to-suit.</h1></div><p class="text-size-medium text-lineheight-tall">En Log-In, cada metro cuadrado está pensado para maximizar tu productividad.</p><div class="margin-top margin-medium"><div class="button-row"><a href="#contacto" class="button is-alternate w-button">Contáctanos</a><a href="#naves" class="button-secondary is-alternate w-button">Ver parques</a></div></div></div></div></div></div><div class="quote-with-photo"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a10bcda3bc5b99ec812d9_Screenshot%202024-05-31%20at%2012.02.32.jpg" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a10bcda3bc5b99ec812d9_Screenshot%202024-05-31%20at%2012.02.32-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a10bcda3bc5b99ec812d9_Screenshot%202024-05-31%20at%2012.02.32-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a10bcda3bc5b99ec812d9_Screenshot%202024-05-31%20at%2012.02.32-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a10bcda3bc5b99ec812d9_Screenshot%202024-05-31%20at%2012.02.32.jpg 1282w" width="1334" sizes="(max-width: 991px) 100vw, 36vw" alt="Partner Discussing with Legal Team" class="image-2"/><div class="scrim hide-mobile"></div><div class="quote-over-photo"></div></div></div></div><section class="section-stats background-color-antique-white"><div class="page-padding-2"><div class="container-large"><div class="padding-vertical padding-xhuge"><div class="w-layout-grid layout227_component"><div class="layout227_item"><div class="margin-bottom margin-xsmall"><div class="div-block-10"><h3 class="heading-xlarge">+</h3><h3 class="heading-xlarge count">31</h3></div></div><p class="paragraph">Años de experiencia</p></div><div class="layout227_item"><div class="margin-bottom margin-xsmall"><div class="div-block-10"><h3 class="heading-xlarge">+</h3><h3 class="heading-xlarge count">9</h3></div></div><p>Parques industriales</p></div><div class="layout227_item"><div class="margin-bottom margin-xsmall"><div class="div-block-10"><h3 class="heading-xlarge">+</h3><h3 class="heading-xlarge count">730000</h3></div></div><p>m<sup>2</sup> construidos</p></div></div><div class="html-embed w-embed w-script"><script>
+    // Wait for the Webflow page to fully load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Your counting animation code
+        jQuery('.count').each(function () {
+            var $this = jQuery(this);
+            $this.prop('Counter', 0).animate({
+                Counter: $this.text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $this.text(Math.ceil(now).toLocaleString());
+                }
+            });
         });
-
-    </script>
-    <script type="text/javascript">
-        ! function(o, c) {
-            var n = c.documentElement,
-                t = " w-mod-";
-            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-        }(window, document);
-
-    </script>
-    <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
-    <link href="images/webclip.jpg" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
-    <style>
-        * {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+    });
+</script></div></div></div></div></section><section id="naves" class="section-our-services background-color-seashell"><div class="padding-vertical padding-xhuge"><div class="div-block-9"><div class="margin-bottom"><div class="max-width-large"><div class="margin-bottom margin-small"><h2 class="heading-2 heading-large">Nuestros parques</h2><div class="code-embed w-embed w-script"><script>
+document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.querySelectorAll('.m2');
+    
+    elements.forEach(function(element) {
+        var number = parseFloat(element.textContent);
+        if (!isNaN(number)) {
+            element.textContent = formatNumberWithComma(number);
         }
+    });
+});
 
-    </style>
-    <!--  You can remove this  -->
-    <meta name="facebook-domain-verification" content="mlk59ybu44651lzcbhhxjfl8vfae8q">
-    <style>
-        .shuriken-swiper-wrapper {
-            -webkit-transition-timing-function: linear !important;
-            -o-transition-timing-function: linear !important;
-            transition-timing-function: linear !important;
+function formatNumberWithComma(number) {
+    return number.toLocaleString('en-US');
+}
+</script></div></div></div></div><div class="swiper-arrow-wrapper"><div id="left-button" class="slider-button-left"></div><div id="right-button" class="slider-button-right"></div></div></div><div class="gallery20_component"><div id="basic-swiper" class="basic-swiper-2z w-dyn-list"><div role="list" class="swiper-wrapper-2z basic-slider-listz w-dyn-items"><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto">En proyecto</div><div class="text-block-34 desarrollo operando w-condition-invisible">Operando</div></div><div class="div-block-14"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" alt="" class="image-7 w-dyn-bind-empty"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">Xona</h3><div><div class="text-block-34 espacios">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">Xonacatlán, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">13000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando w-condition-invisible">Operando</div></div><div class="div-block-14 w-condition-invisible"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0fbabf2004ccf3d306ae_Screenshot%202024-05-31%20at%2011.58.15.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0fbabf2004ccf3d306ae_Screenshot%202024-05-31%20at%2011.58.15-p-500.jpg 500w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0fbabf2004ccf3d306ae_Screenshot%202024-05-31%20at%2011.58.15-p-800.jpg 800w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0fbabf2004ccf3d306ae_Screenshot%202024-05-31%20at%2011.58.15-p-1080.jpg 1080w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0fbabf2004ccf3d306ae_Screenshot%202024-05-31%20at%2011.58.15.jpg 1248w" class="image-7"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">T2</h3><div><div class="text-block-34 espacios">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="https://maps.app.goo.gl/GJsiLCMvpgbAdrX29" target="_blank" class="link-block w-inline-block"><p class="text-size-medium text-color-white">San Blas Otzacatipan, Toluca, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">13400</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white">divisibles</p><p class="text-size-medium text-color-white m2 bts">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-richtext"><p>Microparque con posibilidad de build-to-suit con 14 andenes de carga, infraestructura de la mejor calidad y grandes patios de maniobra para una operación óptima.</p></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando w-condition-invisible">Operando</div></div><div class="div-block-14 w-condition-invisible"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0fa29881a2f1d90ff152_Screenshot%202024-05-31%20at%2011.57.48.jpg" loading="lazy" alt="" class="image-7"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">RDP</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="https://maps.app.goo.gl/CEKSGf7vD5E55Eou6" target="_blank" class="link-block w-inline-block"><p class="text-size-medium text-color-white">San Pedro Totoltepec, Toluca, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">7000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-richtext"><p>Ubicado a 200 metros de la nueva carretera Toluca-Naucalpán, Log In RDP tiene toda la infraestructura necesaria para impulsar tu negocio.</p></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando">Operando</div></div><div class="div-block-14"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" alt="" class="image-7 w-dyn-bind-empty"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">Cerrillo</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">Cerrillo Vista Hermosa, Toluca, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">4000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando">Operando</div></div><div class="div-block-14 w-condition-invisible"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27-p-500.jpg 500w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27-p-800.jpg 800w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27-p-1080.jpg 1080w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27-p-1600.jpg 1600w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27-p-2000.jpg 2000w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27-p-2600.jpg 2600w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f8bc8822297285c041a_Screenshot%202024-05-31%20at%2011.57.27.jpg 3072w" class="image-7"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">Lerma I</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">Emiliano Zapata, Lerma de Villada, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">7000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando">Operando</div></div><div class="div-block-14 w-condition-invisible"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04-p-500.jpg 500w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04-p-800.jpg 800w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04-p-1080.jpg 1080w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04-p-1600.jpg 1600w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04-p-2000.jpg 2000w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f73d8163fae814bee15_Screenshot%202024-05-31%20at%2011.57.04.jpg 2300w" class="image-7"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">BAT Aeropuerto</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">San Miguel Totoltepec, Toluca, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">14000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando">Operando</div></div><div class="div-block-14"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" alt="" class="image-7 w-dyn-bind-empty"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">San Blas</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">San Blas Otzacatipan, Toluca, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">7000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando">Operando</div></div><div class="div-block-14"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" alt="" class="image-7 w-dyn-bind-empty"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">Cancún</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">Aeropuerto Internacional de Cancún, Cancún, Quintana Roo</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">10000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div><div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item"><div class="div-block-7"><div class="div-block-8"><div class="div-block-3"><div class="text-block-34 desarrollo w-condition-invisible">En desarrollo</div><div class="text-block-34 desarrollo proyecto w-condition-invisible">En proyecto</div><div class="text-block-34 desarrollo operando">Operando</div></div><div class="div-block-14 w-condition-invisible"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601c20e0bb88dfe4088cc86_LOG-IN-v2.pptx-pdf%20(1).jpg 960w" alt="" class="image-7"/><div class="div-block-13"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fdecf4193c91c4ae0e678d_Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"/></div></div><img src="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43.jpg" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43-p-500.jpg 500w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43-p-800.jpg 800w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43-p-1080.jpg 1080w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43-p-1600.jpg 1600w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43-p-2000.jpg 2000w, https://cdn.prod.website-files.com/6626eafeafcdaa98a59964b5/665a0f5e4ea82923beb259dc_Screenshot%202024-05-31%20at%2011.56.43.jpg 2302w" class="image-7"/></div><div class="max-width-medium"><div class="div-block-12"><h3 class="heading-2 light">ALC T2000</h3><div><div class="text-block-34 espacios w-condition-invisible">Espacios disponibles</div></div></div><div class="div-block-11"><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block"><p class="text-size-medium text-color-white">Parque Industrial, Toluca, Estado de México</p></a></div><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5"><p class="text-size-medium text-color-white m2">5000</p><p class="text-size-medium text-color-white m2">m<sup>2</sup></p><p class="text-size-medium text-color-white w-condition-invisible">divisibles</p><p class="text-size-medium text-color-white m2 bts w-condition-invisible">Build-to-suit</p></div></div></div><div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div></div><div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2"><a href="#" class="button-secondary naves w-condition-invisible w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-condition-invisible w-button">Descargar ficha técnica</a></div></div></div></div></div><div data-delay="4000" data-animation="slide" class="gallery20_slider hidden w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false"><div class="gallery20_mask w-slider-mask"><div data-w-id="1daa9004-98fe-9c1f-9e1a-150f13ea9c3d" class="gallery20_slide w-slide"><header class="basic-swiper-slide-content"><div class="page-padding-2"><div class="container-large"><div class="header-80vh"><div class="padding-vertical padding-large"><div class="max-width-medium"><div class="margin-bottom margin-small"><div class="div-block-3"><div class="text-block-34">Espacios disponibles</div><div class="text-block-34 desarrollo">En Desarrollo</div></div><h3 class="heading-2 light">Log-In T2000</h3></div><p class="text-size-medium text-color-white naves">Para asegurar eficiencia operativa, Log-Inl Don Pepe está equipada con 7 andenes de carga, cross dock y 8 columnas centrales. Además, cuenta con pisos de alta resistencia, ideales para el manejo de cargas pesadas, y techumbre de lámina KR-18 con aislante térmico-acústico para asegurar condiciones climáticas óptimas.Este espacio se complementa con amplios patios de maniobras, 21 cajones de estacionamiento vehicular, oficinas, baños y casetas de vigilancia en puntos estratégicos con seguridad permanente.</p><div class="div-block"><p class="text-size-medium text-color-white tag">Metraje</p><p class="text-size-medium text-color-white">6,924 m<sup>2 </sup>divisibles</p></div><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><p class="text-size-medium text-color-white">Rancho Don Pepe Manzana 006, Francisco I Madero, 50235 Lerma de Villada, Méx.</p></div></div></div><div id="w-node-_6065bf20-d4dd-a09f-9500-3c9870ef6600-875ea43f" class="div-block-2"><a href="https://maps.app.goo.gl/CEKSGf7vD5E55Eou6" target="_blank" class="button-secondary naves w-button">Agendar una visita</a><a href="#" class="button-secondary naves w-button">Descargar ficha técnica</a></div></div></div></div><div class="cta4_background-image-wrapper"><div class="image-overlay-layer"></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fde24a9524450f875ea467_placeholder-image.svg" loading="lazy" alt="" class="header5_background-image"/></div></header></div><div data-w-id="2263108f-34f0-b4a0-b96a-a94baac06ec2" class="gallery20_slide w-slide"><header class="basic-swiper-slide-content"><div class="page-padding-2"><div class="container-large"><div class="header-80vh"><div class="padding-vertical padding-large"><div class="max-width-medium"><div class="margin-bottom margin-small"><h3 class="heading-2 light">Log-In T2000</h3></div><p class="text-size-medium text-color-white naves">Parque industrial con grandes patios para maniobra, pisos de alta resistencia, altura mínima de 11m2 y techumbre de lámina KR-18 con aislamiento térmico-acústico.						<br/><br/>Cuenta con 14 andenes de carga completamente equipados, rampas de acceso vehicular, estacionamiento amplio, módulos de oficinas con baños, caseta de <strong>vigilancia y seguridad 24/7.</strong></p><div class="div-block"><p class="text-size-medium text-color-white tag">Área</p><p class="text-size-medium text-color-white">13,406 m<sup>2 </sup>divisibles</p></div><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><p class="text-size-medium text-color-white">San Blas Otzacatipan, 50230, Toluca de Lerdo, México. </p></div></div></div><a href="#" class="button-secondary naves w-button">Ver en Google Maps</a></div></div></div><div class="cta4_background-image-wrapper"><div class="image-overlay-layer"></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fde24a9524450f875ea467_placeholder-image.svg" loading="lazy" alt="" class="header5_background-image"/></div></header></div><div data-w-id="d889e1b8-bd61-f50b-e835-0733dc9a35a8" class="gallery20_slide w-slide"><header class="basic-swiper-slide-content"><div class="page-padding-2"><div class="container-large"><div class="header-80vh"><div class="padding-vertical padding-large"><div class="max-width-medium"><div class="margin-bottom margin-small"><h3 class="heading-2 light">Log-In T2000</h3></div><p class="text-size-medium text-color-white naves">Parque industrial con grandes patios para maniobra, pisos de alta resistencia, altura mínima de 11m2 y techumbre de lámina KR-18 con aislamiento térmico-acústico.						<br/><br/>Cuenta con 14 andenes de carga completamente equipados, rampas de acceso vehicular, estacionamiento amplio, módulos de oficinas con baños, caseta de <strong>vigilancia y seguridad 24/7.</strong></p><div class="div-block"><p class="text-size-medium text-color-white tag">Área</p><p class="text-size-medium text-color-white">13,406 m<sup>2 </sup>divisibles</p></div><div class="div-block"><p class="text-size-medium text-color-white tag">Ubicación</p><p class="text-size-medium text-color-white">San Blas Otzacatipan, 50230, Toluca de Lerdo, México. </p></div></div></div><a href="#" class="button-secondary naves w-button">Ver en Google Maps</a></div></div></div><div class="cta4_background-image-wrapper"><div class="image-overlay-layer"></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fde24a9524450f875ea467_placeholder-image.svg" loading="lazy" alt="" class="header5_background-image"/></div></header></div></div><div class="gallery20_arrow left w-slider-arrow-left"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fde24a9524450f875ea464_icon_slider-arrow-left.svg" loading="lazy" alt=""/></div><div class="gallery20_arrow w-slider-arrow-right"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fde24a9524450f875ea46f_icon_slider-arrow-right.svg" loading="lazy" alt=""/></div><div class="gallery20_slide-nav w-slider-nav w-slider-nav-invert w-round"></div></div></div></div></section><div id="hacemos" class="section-callout"><div class="callout_component background-color-seashell"><div class="page-padding"><div class="container-large"><div class="padding-vertical padding-xxlarge"><div class="w-layout-grid header_content-wrapper"><div class="header_content-left"><h2 class="heading-2 heading-large">¿Qué hacemos?</h2></div><div class="header_content-right"><p class="text-size-medium text-lineheight-tall">Desarrollamos parques industriales totalmente equipados y de la más alta calidad en puntos estratégicos de la república mexicana. Nos encargamos de la planeación, construcción, operación, arrendamiento y mantenimiento de cada nave con el fin de ofrecer un servicio integral.</p></div></div></div></div></div><div class="header_image-wrapper"><div class="header_background-image-wrapper"><div class="image-overlay-layer hide"></div></div></div></div></div><div id="nosotros" class="spark-section-2"><div class="spark-container-2 w-container"><h2><strong class="bold-text-2">Nosotros</strong></h2><div class="spark-2-column-flex"><div class="spark-secondary-background-card"><div class="div-block-6"><h5>Nuestra historia</h5><div class="spark-small-icon-2 spark-primary-color spark-margin-bottom-16px w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></div></div><p class="spark-secondary-paragraph-3">Desde 1993 nos dedicamos a la construcción de espacios industriales. Tenemos la convicción de que solo pisa firme quien persevera y solo deja huella quien alcanza la excelencia. Por eso, hemos buscado en cada rincón del mundo los mejores procedimientos, materiales y acabados para traerlos a nuestro país. En México, somos pioneros en implementar un sistema de nivelación láser y en reforzar nuestras estructuras con fibra metálica. Con esto, hemos logrado suelos sólidos, resistentes y de alta planicidad.</p></div><div class="spark-secondary-background-card"><div class="div-block-6"><h5>Nuestra filosofía</h5><div class="spark-small-icon-2 spark-primary-color spark-margin-bottom-16px w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM144 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z"/></svg></div></div><p class="spark-secondary-paragraph-3">Queremos dar a cada uno de nuestros clientes el mejor de los resultados posibles. Para lograrlo, contamos con un departamento técnico que diseña infraestructuras en función las necesidades particulares de cada proyecto. Aseguramos siempre soluciones integrales y adaptadas a los requerimientos de quienes confían en nosotros. Nuestra motivación radica en ser la fuerza impulsora detrás del desarrollo de los espacios industriales que impactan la vida de las y los mexicanos.</p></div></div></div></div><section id="partners" class="spark-section-3"><div class="spark-container-2 w-container"><div class="spark-flex-row spark-split-and-wrapped"><div><h2 class="white"><strong>Partners</strong></h2><p class="spark-hero-sub-paragraph">Los mejores proyectos son multidisciplinarios, y eso solo se logra a través de alianzas inteligentes. Por eso, creamos una sinergia con DICON, una constructora con más de 20 años de experiencia en la planeación y el desarrollo de proyectos industriales. <br/><br/>Con su filosofía de excelencia y experiencia, sumada a nuestra visión estratégica, hemos logrado implementar los mejores protocolos al ecosistema industrial de nuestro país para lograr espacios del más alto nivel. </p></div><div class="spark-flex-row spark-right"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a0e8d73b8eb1f46af7456_dicon_blanco.png" loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 767px) 268.8828125px, (max-width: 991px) 358.5078125px, (max-width: 1919px) 28vw, 358.5078125px" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a0e8d73b8eb1f46af7456_dicon_blanco-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/665a0e8d73b8eb1f46af7456_dicon_blanco.png 1024w" alt="" class="image-8"/></div></div></div></section><header class="section-callout hidden"><div class="header-callout background-color-peach"><div class="page-padding-2"><div class="container-large"><div class="padding-vertical padding-huge"><div class="w-layout-grid header_content-wrapper"><div class="header_content-left"><h1 class="heading-2 heading-xxlarge">A Bespoke Legal Service</h1></div><div class="header_content-right"><p class="text-size-medium text-lineheight-tall">An emphasis on building long-lasting relationships, tailoring our services to the needs of our clients, and giving confidence in the depth and breadth of our network.<br/><br/>We seek to understand our market and the people within it because we care about what they want and why they want it.</p><div class="margin-top margin-medium"><div class="button-row"><a href="#" class="button-secondary w-button">Learn More</a></div></div></div></div></div></div></div><div class="callout-bg"><div class="header_background-image-wrapper"><div class="image-overlay-layer hide"></div><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/65fde24a9524450f875ea467_placeholder-image.svg" loading="lazy" alt="" class="header_background-image"/></div></div></div></header><section id="contacto" class="section-cta background-color-black"><div class="page-padding"><div class="container-small"><div class="padding-vertical padding-xxhuge"><div class="text-align-center"><div class="margin-bottom margin-small"><h2 class="heading-xlarge extra-height">¿Te interesa rentar una de nuestras bodegas disponibles o colaborar en algún proyecto? Contáctanos.</h2><div class="rich-text-block w-richtext"><p><a href="mailto:info@loginparks.com">info@loginparks.com</a> </p><p>+52(55) 5358 5711 | +52(55) 5358 5760</p><p>o </p><p>Déjanos tus datos y estaremos en contacto contigo</p></div><div id="myForm" class="form-block-3 w-form"><form id="email-form" name="email-form" data-name="Email Form" action="https://bots.productosdigitales.mx/webhook/form" method="post" class="form-2" data-wf-page-id="65fde24a9524450f875ea43f" data-wf-element-id="92e52198-d24b-eb01-451c-ec849ef8c31e"><input class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Nombre" type="text" id="name"/><input class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Correo" type="email" id="email" required=""/><textarea id="texto" name="texto" maxlength="5000" data-name="texto" placeholder="mensaje" class="textarea w-node-_1f2d373f-d904-ec04-304c-19e22bbecfd6-875ea43f w-input"></textarea><div id="w-node-_73403af4-2ca9-8283-4729-976894f47acb-875ea43f" class="code-embed-2 w-embed"><!-- Math problem question -->
+  <div id="mathQuestion"></div>
+  
+  <!-- Input field for the answer -->
+  <input type="text" id="mathAnswer" name="mathAnswer" placeholder="Resuelve la siguiente operación" required>
+  <style>
+#mathAnswer {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-align: center;
+    width: 280px;
+}
+  </style></div><div id="w-node-a0bb528b-9ae9-a58f-0dc9-f6db62074b95-875ea43f" class="code-embed-3 w-embed w-script"><script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to generate a random integer between min and max (inclusive)
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Function to generate a new math problem
+    function generateMathProblem() {
+        const num1 = getRandomInt(1, 10);
+        const num2 = getRandomInt(1, 10);
+        const operator = getRandomInt(0, 1) ? '+' : '-';
+        const question = `${num1} ${operator} ${num2}`;
+        const answer = operator === '+' ? num1 + num2 : num1 - num2;
+
+        return { question, answer };
+    }
+
+    // Generate the math problem
+    const mathProblem = generateMathProblem();
+    
+    // Display the math problem in the form
+    document.getElementById("mathQuestion").textContent = `¿Cuánto es ${mathProblem.question}?`;
+    
+    // Validate the form on submit
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        const userAnswer = parseInt(document.getElementById("mathAnswer").value, 10);
+        if (userAnswer !== mathProblem.answer) {
+            alert("Respuesta Incorrecta. Intenta de nuevo.");
+            event.preventDefault();
         }
-
-    </style>
-</head>
-
-<body class="body">
-    <div class="page-wrapper">
-        <div class="global-styles w-embed">
-            <style>
-                /* Snippet gets rid of top margin on first element in any rich text*/
-                .w-richtext>:first-child {
-                    margin-top: 0;
-                }
-
-                /* Snippet gets rid of bottom margin on last element in any rich text*/
-                .w-richtext>:last-child,
-                .w-richtext ol li:last-child,
-                .w-richtext ul li:last-child {
-                    margin-bottom: 0;
-                }
-
-                /* Snippet makes all link elements listed below to inherit color from their parent */
-                a,
-                .w-tab-link,
-                .w-nav-link,
-                .w-dropdown-btn,
-                .w-dropdown-toggle,
-                .w-dropdown-link {
-                    color: inherit;
-                }
-
-                /* Snippet prevents all click and hover interaction with an element */
-                .clickable-off {
-                    pointer-events: none;
-                }
-
-                /* Snippet enables all click and hover interaction with an element */
-                .clickable-on {
-                    pointer-events: auto;
-                }
-
-                /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
-                .div-square::after {
-                    content: "";
-                    display: block;
-                    padding-bottom: 100%;
-                }
-
-                /*Hide focus outline for main content element*/
-                main:focus-visible {
-                    outline: -webkit-focus-ring-color auto 0px;
-                }
-
-                /* Make sure containers never lose their center alignment*/
-                .container-medium,
-                .container-small,
-                .container-large {
-                    margin-right: auto !important;
-                    margin-left: auto !important;
-                }
-
-                /*Reset selects, buttons, and links styles*/
-                .w-input,
-                .w-select,
-                a {
-                    color: inherit;
-                    text-decoration: inherit;
-                    font-size: inherit;
-                }
-
-                /*Apply "..." after 3 lines of text */
-                .text-style-3lines {
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                }
-
-                /* Apply "..." after 2 lines of text */
-                .text-style-2lines {
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                }
-
-                /* Apply "..." at 100% width */
-                .truncate-width {
-                    width: 100%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-                /* Removes native scrollbar */
-                .no-scrollbar {
-                    -ms-overflow-style: none; // IE 10+
-                    overflow: -moz-scrollbars-none; // Firefox
-                }
-
-                .no-scrollbar::-webkit-scrollbar {
-                    display: none; // Safari and Chrome
-                }
-
-            </style>
-        </div>
-        <main class="main-wrapper">
-            <div data-collapse="medium" data-animation="default" data-duration="400" data-w-id="ebdb72fb-b4ff-9908-afea-6b0ae1851d73" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-                <div class="navbar2_container text-color-white">
-                    <a href="#inicio" class="navbar2_logo-link w-nav-brand"><img src="images/Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" width="213" sizes="(max-width: 479px) 35vw, (max-width: 767px) 38vw, (max-width: 991px) 213px, (max-width: 1919px) 14vw, 213px" alt="" srcset="images/Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, images/Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" class="navbar2_logo"></a>
-                    <nav role="navigation" id="w-node-ebdb72fb-b4ff-9908-afea-6b0ae1851d77-e1851d73" class="navbar2_menu w-nav-menu">
-                        <a href="#inicio" class="navbar2_link w-nav-link">Inicio</a>
-                        <a href="#naves" class="navbar2_link w-nav-link">Parques industriales</a>
-                        <a href="#hacemos" class="navbar2_link w-nav-link">¿Qué hacemos?</a>
-                        <a href="#nosotros" class="navbar2_link w-nav-link">Nosotros</a>
-                        <a href="#partners" class="navbar2_link w-nav-link">Partners</a>
-                    </nav>
-                    <div id="w-node-ebdb72fb-b4ff-9908-afea-6b0ae1851d82-e1851d73" class="navbar2_button-wrapper">
-                        <a href="https://www.linkedin.com/company/loginparks/" target="_blank" class="link-block-2 w-inline-block"><img src="images/LinkedIn_logo_initials.png" loading="lazy" sizes="(max-width: 767px) 19.1953125px, (max-width: 991px) 2vw, (max-width: 1919px) 19.1953125px, 1vw" srcset="images/LinkedIn_logo_initials-p-500.png 500w, images/LinkedIn_logo_initials.png 600w" alt=""></a>
-                        <a href="#contacto" id="w-node-ebdb72fb-b4ff-9908-afea-6b0ae1851d83-e1851d73" class="button-secondary is-alternate nav w-button">Contáctanos</a>
-                        <div class="navbar2_menu-button w-nav-button">
-                            <div class="menu-icon2">
-                                <div class="menu-icon2_line-top is-alternate"></div>
-                                <div class="menu-icon2_line-middle is-alternate">
-                                    <div class="menu-icon_line-middle-inner"></div>
-                                </div>
-                                <div class="menu-icon2_line-bottom is-alternate"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="inicio" class="section-hero background-color-black">
-                <div class="grid-halves-section">
-                    <div id="w-node-e8b4bdcd-f857-646a-7aa2-55bc09234a3d-875ea43f" class="section align-content-center background-color-black">
-                        <div class="main-container">
-                            <div class="container reduced-width align-center">
-                                <div class="header1_content">
-                                    <div class="margin-bottom margin-small">
-                                        <h1 class="heading">Bodegas industriales build-to-suit.</h1>
-                                    </div>
-                                    <p class="text-size-medium text-lineheight-tall">En Log-In, cada metro cuadrado está pensado para maximizar tu productividad.</p>
-                                    <div class="margin-top margin-medium">
-                                        <div class="button-row">
-                                            <a href="#contacto" class="button is-alternate w-button">Contáctanos</a>
-                                            <a href="#naves" class="button-secondary is-alternate w-button">Ver parques</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quote-with-photo"><img src="images/Screenshot-2024-05-31-at-12.02.32.jpg" srcset="images/Screenshot-2024-05-31-at-12.02.32-p-500.jpg 500w, images/Screenshot-2024-05-31-at-12.02.32-p-800.jpg 800w, images/Screenshot-2024-05-31-at-12.02.32-p-1080.jpg 1080w, images/Screenshot-2024-05-31-at-12.02.32.jpg 1282w" width="1334" sizes="(max-width: 991px) 100vw, 36vw" alt="Partner Discussing with Legal Team" class="image-2">
-                        <div class="scrim hide-mobile"></div>
-                        <div class="quote-over-photo"></div>
-                    </div>
-                </div>
-            </div>
-            <section class="section-stats background-color-antique-white">
-                <div class="page-padding-2">
-                    <div class="container-large">
-                        <div class="padding-vertical padding-xhuge">
-                            <div class="w-layout-grid layout227_component">
-                                <div class="layout227_item">
-                                    <div class="margin-bottom margin-xsmall">
-                                        <div class="div-block-10">
-                                            <h3 class="heading-xlarge">+</h3>
-                                            <h3 class="heading-xlarge count">31</h3>
-                                        </div>
-                                    </div>
-                                    <p class="paragraph">Años de experiencia</p>
-                                </div>
-                                <div class="layout227_item">
-                                    <div class="margin-bottom margin-xsmall">
-                                        <div class="div-block-10">
-                                            <h3 class="heading-xlarge">+</h3>
-                                            <h3 class="heading-xlarge count">9</h3>
-                                        </div>
-                                    </div>
-                                    <p>Parques industriales</p>
-                                </div>
-                                <div class="layout227_item">
-                                    <div class="margin-bottom margin-xsmall">
-                                        <div class="div-block-10">
-                                            <h3 class="heading-xlarge">+</h3>
-                                            <h3 class="heading-xlarge count">730000</h3>
-                                        </div>
-                                    </div>
-                                    <p>m<sup>2</sup> construidos</p>
-                                </div>
-                            </div>
-                            <div class="html-embed w-embed w-script">
-                                <script>
-                                    // Wait for the Webflow page to fully load
-                                    document.addEventListener('DOMContentLoaded', function() {
-                                        // Your counting animation code
-                                        jQuery('.count').each(function() {
-                                            var $this = jQuery(this);
-                                            $this.prop('Counter', 0).animate({
-                                                Counter: $this.text()
-                                            }, {
-                                                duration: 2000,
-                                                easing: 'swing',
-                                                step: function(now) {
-                                                    $this.text(Math.ceil(now).toLocaleString());
-                                                }
-                                            });
-                                        });
-                                    });
-
-                                </script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="naves" class="section-our-services background-color-seashell">
-                <div class="padding-vertical padding-xhuge">
-                    <div class="div-block-9">
-                        <div class="margin-bottom">
-                            <div class="max-width-large">
-                                <div class="margin-bottom margin-small">
-                                    <h2 class="heading-2 heading-large">Nuestros parques</h2>
-                                    <div class="code-embed w-embed w-script">
-                                        <script>
-                                            document.addEventListener("DOMContentLoaded", function() {
-                                                var elements = document.querySelectorAll('.m2');
-                                                elements.forEach(function(element) {
-                                                    var number = parseFloat(element.textContent);
-                                                    if (!isNaN(number)) {
-                                                        element.textContent = formatNumberWithComma(number);
-                                                    }
-                                                });
-                                            });
-
-                                            function formatNumberWithComma(number) {
-                                                return number.toLocaleString('en-US');
-                                            }
-
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-arrow-wrapper">
-                            <div id="left-button" class="slider-button-left"></div>
-                            <div id="right-button" class="slider-button-right"></div>
-                        </div>
-                    </div>
-                    <div class="gallery20_component">
-                        <div id="basic-swiper" class="basic-swiper-2z w-dyn-list">
-                            <div role="list" class="swiper-wrapper-2z basic-slider-listz w-dyn-items">
-                                <div id="w-node-_73f4950e-3eea-812f-b26f-741c99fbff98-875ea43f" role="listitem" class="swiper-slide basic-swiperr-item w-dyn-item">
-                                    <div class="div-block-7">
-                                        <div class="div-block-8">
-                                            <div class="div-block-3">
-                                                <div class="text-block-34 desarrollo">En desarrollo</div>
-                                                <div class="text-block-34 desarrollo proyecto">En proyecto</div>
-                                                <div class="text-block-34 desarrollo operando">Operando</div>
-                                            </div>
-                                            <div class="div-block-14"><img src="images/LOG-IN-v2.pptx-pdf-1.jpg" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1919px) 29vw, 469.3359375px" srcset="images/LOG-IN-v2.pptx-pdf-1-p-500.jpg 500w, images/LOG-IN-v2.pptx-pdf-1-p-800.jpg 800w, images/LOG-IN-v2.pptx-pdf-1.jpg 960w" alt="" class="image-7">
-                                                <div class="div-block-13"><img src="images/Screenshot_2024-03-22_at_14.40.04-removebg-preview.png" loading="lazy" sizes="94.9609375px" srcset="images/Screenshot_2024-03-22_at_14.40.04-removebg-preview-p-500.png 500w, images/Screenshot_2024-03-22_at_14.40.04-removebg-preview.png 555w" alt="" class="image-9"></div>
-                                            </div><img src="images/LOG-IN-v2.pptx-pdf-1.jpg" loading="lazy" alt="" class="image-7 w-dyn-bind-empty">
-                                        </div>
-                                        <div class="max-width-medium">
-                                            <div class="div-block-12">
-                                                <h3 class="heading-2 light w-dyn-bind-empty"></h3>
-                                                <div>
-                                                    <div class="text-block-34 espacios">Espacios disponibles</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-block-11">
-                                                <div class="div-block">
-                                                    <p class="text-size-medium text-color-white tag">Ubicación</p>
-                                                    <a id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de0-875ea43f" href="#" class="link-block w-inline-block">
-                                                        <p class="text-size-medium text-color-white w-dyn-bind-empty"></p>
-                                                    </a>
-                                                </div>
-                                                <div class="div-block">
-                                                    <p class="text-size-medium text-color-white tag">Metraje</p>
-                                                    <div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5dd5-875ea43f" class="div-block-5">
-                                                        <p class="text-size-medium text-color-white m2 w-dyn-bind-empty"></p>
-                                                        <p class="text-size-medium text-color-white m2">m<sup>2</sup></p>
-                                                        <p class="text-size-medium text-color-white">divisibles</p>
-                                                        <p class="text-size-medium text-color-white m2 bts">Build-to-suit</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text-size-medium text-color-white naves w-dyn-bind-empty w-richtext"></div>
-                                        </div>
-                                        <div id="w-node-_28135e5c-b67d-97de-c47f-3e87fd4e5de6-875ea43f" class="div-block-2">
-                                            <a href="#" class="button-secondary naves w-button">Agendar una visita</a>
-                                            <a href="#" class="button-secondary naves w-button">Descargar ficha técnica</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-dyn-empty">
-                                <div>No items found.</div>
-                            </div>
-                        </div>
-                        <div data-delay="4000" data-animation="slide" class="gallery20_slider hidden w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
-                            <div class="gallery20_mask w-slider-mask">
-                                <div data-w-id="1daa9004-98fe-9c1f-9e1a-150f13ea9c3d" class="gallery20_slide w-slide">
-                                    <header class="basic-swiper-slide-content">
-                                        <div class="page-padding-2">
-                                            <div class="container-large">
-                                                <div class="header-80vh">
-                                                    <div class="padding-vertical padding-large">
-                                                        <div class="max-width-medium">
-                                                            <div class="margin-bottom margin-small">
-                                                                <div class="div-block-3">
-                                                                    <div class="text-block-34">Espacios disponibles</div>
-                                                                    <div class="text-block-34 desarrollo">En Desarrollo</div>
-                                                                </div>
-                                                                <h3 class="heading-2 light">Log-In T2000</h3>
-                                                            </div>
-                                                            <p class="text-size-medium text-color-white naves">Para asegurar eficiencia operativa, Log-Inl Don Pepe está equipada con 7 andenes de carga, cross dock y 8 columnas centrales. Además, cuenta con pisos de alta resistencia, ideales para el manejo de cargas pesadas, y techumbre de lámina KR-18 con aislante térmico-acústico para asegurar condiciones climáticas óptimas.Este espacio se complementa con amplios patios de maniobras, 21 cajones de estacionamiento vehicular, oficinas, baños y casetas de vigilancia en puntos estratégicos con seguridad permanente.</p>
-                                                            <div class="div-block">
-                                                                <p class="text-size-medium text-color-white tag">Metraje</p>
-                                                                <p class="text-size-medium text-color-white">6,924 m<sup>2 </sup>divisibles</p>
-                                                            </div>
-                                                            <div class="div-block">
-                                                                <p class="text-size-medium text-color-white tag">Ubicación</p>
-                                                                <p class="text-size-medium text-color-white">Rancho Don Pepe Manzana 006, Francisco I Madero, 50235 Lerma de Villada, Méx.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="w-node-_6065bf20-d4dd-a09f-9500-3c9870ef6600-875ea43f" class="div-block-2">
-                                                        <a href="https://maps.app.goo.gl/CEKSGf7vD5E55Eou6" target="_blank" class="button-secondary naves w-button">Agendar una visita</a>
-                                                        <a href="#" class="button-secondary naves w-button">Descargar ficha técnica</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cta4_background-image-wrapper">
-                                            <div class="image-overlay-layer"></div><img src="images/placeholder-image.svg" loading="lazy" alt="" class="header5_background-image">
-                                        </div>
-                                    </header>
-                                </div>
-                                <div data-w-id="2263108f-34f0-b4a0-b96a-a94baac06ec2" class="gallery20_slide w-slide">
-                                    <header class="basic-swiper-slide-content">
-                                        <div class="page-padding-2">
-                                            <div class="container-large">
-                                                <div class="header-80vh">
-                                                    <div class="padding-vertical padding-large">
-                                                        <div class="max-width-medium">
-                                                            <div class="margin-bottom margin-small">
-                                                                <h3 class="heading-2 light">Log-In T2000</h3>
-                                                            </div>
-                                                            <p class="text-size-medium text-color-white naves">Parque industrial con grandes patios para maniobra, pisos de alta resistencia, altura mínima de 11m2 y techumbre de lámina KR-18 con aislamiento térmico-acústico. <br><br>Cuenta con 14 andenes de carga completamente equipados, rampas de acceso vehicular, estacionamiento amplio, módulos de oficinas con baños, caseta de <strong>vigilancia y seguridad 24/7.</strong></p>
-                                                            <div class="div-block">
-                                                                <p class="text-size-medium text-color-white tag">Área</p>
-                                                                <p class="text-size-medium text-color-white">13,406 m<sup>2 </sup>divisibles</p>
-                                                            </div>
-                                                            <div class="div-block">
-                                                                <p class="text-size-medium text-color-white tag">Ubicación</p>
-                                                                <p class="text-size-medium text-color-white">San Blas Otzacatipan, 50230, Toluca de Lerdo, México. </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="button-secondary naves w-button">Ver en Google Maps</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cta4_background-image-wrapper">
-                                            <div class="image-overlay-layer"></div><img src="images/placeholder-image.svg" loading="lazy" alt="" class="header5_background-image">
-                                        </div>
-                                    </header>
-                                </div>
-                                <div data-w-id="d889e1b8-bd61-f50b-e835-0733dc9a35a8" class="gallery20_slide w-slide">
-                                    <header class="basic-swiper-slide-content">
-                                        <div class="page-padding-2">
-                                            <div class="container-large">
-                                                <div class="header-80vh">
-                                                    <div class="padding-vertical padding-large">
-                                                        <div class="max-width-medium">
-                                                            <div class="margin-bottom margin-small">
-                                                                <h3 class="heading-2 light">Log-In T2000</h3>
-                                                            </div>
-                                                            <p class="text-size-medium text-color-white naves">Parque industrial con grandes patios para maniobra, pisos de alta resistencia, altura mínima de 11m2 y techumbre de lámina KR-18 con aislamiento térmico-acústico. <br><br>Cuenta con 14 andenes de carga completamente equipados, rampas de acceso vehicular, estacionamiento amplio, módulos de oficinas con baños, caseta de <strong>vigilancia y seguridad 24/7.</strong></p>
-                                                            <div class="div-block">
-                                                                <p class="text-size-medium text-color-white tag">Área</p>
-                                                                <p class="text-size-medium text-color-white">13,406 m<sup>2 </sup>divisibles</p>
-                                                            </div>
-                                                            <div class="div-block">
-                                                                <p class="text-size-medium text-color-white tag">Ubicación</p>
-                                                                <p class="text-size-medium text-color-white">San Blas Otzacatipan, 50230, Toluca de Lerdo, México. </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="button-secondary naves w-button">Ver en Google Maps</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cta4_background-image-wrapper">
-                                            <div class="image-overlay-layer"></div><img src="images/placeholder-image.svg" loading="lazy" alt="" class="header5_background-image">
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                            <div class="gallery20_arrow left w-slider-arrow-left"><img src="images/icon_slider-arrow-left.svg" loading="lazy" alt=""></div>
-                            <div class="gallery20_arrow w-slider-arrow-right"><img src="images/icon_slider-arrow-right.svg" loading="lazy" alt=""></div>
-                            <div class="gallery20_slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hacemos" class="section-callout">
-                <div class="callout_component background-color-seashell">
-                    <div class="page-padding">
-                        <div class="container-large">
-                            <div class="padding-vertical padding-xxlarge">
-                                <div class="w-layout-grid header_content-wrapper">
-                                    <div class="header_content-left">
-                                        <h2 class="heading-2 heading-large">¿Qué hacemos?</h2>
-                                    </div>
-                                    <div class="header_content-right">
-                                        <p class="text-size-medium text-lineheight-tall">Desarrollamos parques industriales totalmente equipados y de la más alta calidad en puntos estratégicos de la república mexicana. Nos encargamos de la planeación, construcción, operación, arrendamiento y mantenimiento de cada nave con el fin de ofrecer un servicio integral.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header_image-wrapper">
-                        <div class="header_background-image-wrapper">
-                            <div class="image-overlay-layer hide"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="nosotros" class="spark-section-2">
-                <div class="spark-container-2 w-container">
-                    <h2><strong class="bold-text-2">Nosotros</strong></h2>
-                    <div class="spark-2-column-flex">
-                        <div class="spark-secondary-background-card">
-                            <div class="div-block-6">
-                                <h5>Nuestra historia</h5>
-                                <div class="spark-small-icon-2 spark-primary-color spark-margin-bottom-16px w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
-                                        <!-- !Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                        <path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"></path>
-                                    </svg></div>
-                            </div>
-                            <p class="spark-secondary-paragraph-3">Desde 1993 nos dedicamos a la construcción de espacios industriales. Tenemos la convicción de que solo pisa firme quien persevera y solo deja huella quien alcanza la excelencia. Por eso, hemos buscado en cada rincón del mundo los mejores procedimientos, materiales y acabados para traerlos a nuestro país. En México, somos pioneros en implementar un sistema de nivelación láser y en reforzar nuestras estructuras con fibra metálica. Con esto, hemos logrado suelos sólidos, resistentes y de alta planicidad.</p>
-                        </div>
-                        <div class="spark-secondary-background-card">
-                            <div class="div-block-6">
-                                <h5>Nuestra filosofía</h5>
-                                <div class="spark-small-icon-2 spark-primary-color spark-margin-bottom-16px w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
-                                        <!-- !Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                        <path d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM144 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z"></path>
-                                    </svg></div>
-                            </div>
-                            <p class="spark-secondary-paragraph-3">Queremos dar a cada uno de nuestros clientes el mejor de los resultados posibles. Para lograrlo, contamos con un departamento técnico que diseña infraestructuras en función las necesidades particulares de cada proyecto. Aseguramos siempre soluciones integrales y adaptadas a los requerimientos de quienes confían en nosotros. Nuestra motivación radica en ser la fuerza impulsora detrás del desarrollo de los espacios industriales que impactan la vida de las y los mexicanos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section id="partners" class="spark-section-3">
-                <div class="spark-container-2 w-container">
-                    <div class="spark-flex-row spark-split-and-wrapped">
-                        <div>
-                            <h2 class="white"><strong>Partners</strong></h2>
-                            <p class="spark-hero-sub-paragraph">Los mejores proyectos son multidisciplinarios, y eso solo se logra a través de alianzas inteligentes. Por eso, creamos una sinergia con DICON, una constructora con más de 20 años de experiencia en la planeación y el desarrollo de proyectos industriales. <br><br>Con su filosofía de excelencia y experiencia, sumada a nuestra visión estratégica, hemos logrado implementar los mejores protocolos al ecosistema industrial de nuestro país para lograr espacios del más alto nivel. </p>
-                        </div>
-                        <div class="spark-flex-row spark-right"><img src="images/dicon_blanco.png" loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 767px) 268.8828125px, (max-width: 991px) 358.5078125px, (max-width: 1919px) 28vw, 358.5078125px" srcset="images/dicon_blanco-p-500.png 500w, images/dicon_blanco.png 1024w" alt="" class="image-8"></div>
-                    </div>
-                </div>
-            </section>
-            <header class="section-callout hidden">
-                <div class="header-callout background-color-peach">
-                    <div class="page-padding-2">
-                        <div class="container-large">
-                            <div class="padding-vertical padding-huge">
-                                <div class="w-layout-grid header_content-wrapper">
-                                    <div class="header_content-left">
-                                        <h1 class="heading-2 heading-xxlarge">A Bespoke Legal Service</h1>
-                                    </div>
-                                    <div class="header_content-right">
-                                        <p class="text-size-medium text-lineheight-tall">An emphasis on building long-lasting relationships, tailoring our services to the needs of our clients, and giving confidence in the depth and breadth of our network.<br><br>We seek to understand our market and the people within it because we care about what they want and why they want it.</p>
-                                        <div class="margin-top margin-medium">
-                                            <div class="button-row">
-                                                <a href="#" class="button-secondary w-button">Learn More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="callout-bg">
-                        <div class="header_background-image-wrapper">
-                            <div class="image-overlay-layer hide"></div><img src="images/placeholder-image.svg" loading="lazy" alt="" class="header_background-image">
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <section id="contacto" class="section-cta background-color-black">
-                <div class="page-padding">
-                    <div class="container-small">
-                        <div class="padding-vertical padding-xxhuge">
-                            <div class="text-align-center">
-                                <div class="margin-bottom margin-small">
-                                    <h2 class="heading-xlarge extra-height">¿Te interesa rentar una de nuestras bodegas disponibles o colaborar en algún proyecto? Contáctanos.</h2>
-                                    <div class="rich-text-block w-richtext">
-                                        <p>
-                                            <a href="mailto:info@loginparks.com">info@loginparks.com</a>
-                                        </p>
-                                        <p>+52(55) 5358 5711 | +52(55) 5358 5760</p>
-                                        <p>o </p>
-                                        <p>Déjanos tus datos y estaremos en contacto contigo</p>
-                                    </div>
-                                    <div id="myForm" class="form-block-3 w-form">
-                                        <form id="email-form" name="email-form" data-name="Email Form" action="https://bots.productosdigitales.mx/webhook/form" method="post" class="form-2" data-wf-page-id="65fde24a9524450f875ea43f" data-wf-element-id="92e52198-d24b-eb01-451c-ec849ef8c31e"><input class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Nombre" type="text" id="name"><input class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Correo" type="email" id="email" required=""><textarea id="texto" name="texto" maxlength="5000" data-name="texto" placeholder="mensaje" class="textarea w-node-_1f2d373f-d904-ec04-304c-19e22bbecfd6-875ea43f w-input"></textarea>
-                                            <div id="w-node-_73403af4-2ca9-8283-4729-976894f47acb-875ea43f" class="code-embed-2 w-embed">
-                                                <!--  Math problem question  -->
-                                                <div id="mathQuestion"></div>
-                                                <!--  Input field for the answer  -->
-                                                <input type="text" id="mathAnswer" name="mathAnswer" placeholder="Resuelve la siguiente operación" required="">
-                                                <style>
-                                                    #mathAnswer {
-                                                        background: transparent;
-                                                        border: 1px solid white;
-                                                        border-radius: 50px;
-                                                        text-align: center;
-                                                        width: 280px;
-                                                    }
-
-                                                </style>
-                                            </div>
-                                            <div id="w-node-a0bb528b-9ae9-a58f-0dc9-f6db62074b95-875ea43f" class="code-embed-3 w-embed w-script">
-                                                <script>
-                                                    document.addEventListener("DOMContentLoaded", function() {
-                                                        // Function to generate a random integer between min and max (inclusive)
-                                                        function getRandomInt(min, max) {
-                                                            return Math.floor(Math.random() * (max - min + 1)) + min;
-                                                        }
-                                                        // Function to generate a new math problem
-                                                        function generateMathProblem() {
-                                                            const num1 = getRandomInt(1, 10);
-                                                            const num2 = getRandomInt(1, 10);
-                                                            const operator = getRandomInt(0, 1) ? '+' : '-';
-                                                            const question = `${num1} ${operator} ${num2}`;
-                                                            const answer = operator === '+' ? num1 + num2 : num1 - num2;
-                                                            return {
-                                                                question,
-                                                                answer
-                                                            };
-                                                        }
-                                                        // Generate the math problem
-                                                        const mathProblem = generateMathProblem();
-                                                        // Display the math problem in the form
-                                                        document.getElementById("mathQuestion").textContent = `¿Cuánto es ${mathProblem.question}?`;
-                                                        // Validate the form on submit
-                                                        document.getElementById("myForm").addEventListener("submit", function(event) {
-                                                            const userAnswer = parseInt(document.getElementById("mathAnswer").value, 10);
-                                                            if (userAnswer !== mathProblem.answer) {
-                                                                alert("Respuesta Incorrecta. Intenta de nuevo.");
-                                                                event.preventDefault();
-                                                            }
-                                                        });
-                                                    });
-
-                                                </script>
-                                            </div><input type="submit" data-wait="Por favor espere..." id="w-node-_92e52198-d24b-eb01-451c-ec849ef8c325-875ea43f" class="button-secondary is-alternate w-button" value="Enviar">
-                                        </form>
-                                        <div class="w-form-done">
-                                            <div>Thank you! Your submission has been received!</div>
-                                        </div>
-                                        <div class="w-form-fail">
-                                            <div>Oops! Something went wrong while submitting the form.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="hidden">
-                <div id="w-node-b7399cbe-0afe-dcad-1ac2-742f5a5195d8-875ea43f" class="w-layout-layout wf-layout-layout">
-                    <div id="w-node-b7399cbe-0afe-dcad-1ac2-742f5a5195d9-875ea43f" class="w-layout-cell"><img src="images/Screenshot-2024-03-25-at-14.22.17.jpg" loading="lazy" sizes="100vw" srcset="images/Screenshot-2024-03-25-at-14.22.17-p-500.jpg 500w, images/Screenshot-2024-03-25-at-14.22.17-p-800.jpg 800w, images/Screenshot-2024-03-25-at-14.22.17-p-1080.jpg 1080w, images/Screenshot-2024-03-25-at-14.22.17-p-1600.jpg 1600w, images/Screenshot-2024-03-25-at-14.22.17.jpg 1738w" alt=""></div>
-                    <div id="w-node-b7399cbe-0afe-dcad-1ac2-742f5a5195da-875ea43f" class="w-layout-cell"><img src="images/Screenshot-2024-03-25-at-14.22.34.jpg" loading="lazy" sizes="100vw" srcset="images/Screenshot-2024-03-25-at-14.22.34-p-500.jpg 500w, images/Screenshot-2024-03-25-at-14.22.34-p-800.jpg 800w, images/Screenshot-2024-03-25-at-14.22.34-p-1080.jpg 1080w, images/Screenshot-2024-03-25-at-14.22.34-p-1600.jpg 1600w, images/Screenshot-2024-03-25-at-14.22.34-p-2000.jpg 2000w, images/Screenshot-2024-03-25-at-14.22.34-p-2600.jpg 2600w, images/Screenshot-2024-03-25-at-14.22.34.jpg 2916w" alt="" class="image-5"></div>
-                    <div id="w-node-d8296910-348f-ca5c-cf57-85db8c99d307-875ea43f" class="w-layout-cell"><img src="images/Screenshot-2024-03-25-at-14.23.23.jpg" loading="lazy" sizes="100vw" srcset="images/Screenshot-2024-03-25-at-14.23.23-p-500.jpg 500w, images/Screenshot-2024-03-25-at-14.23.23-p-800.jpg 800w, images/Screenshot-2024-03-25-at-14.23.23-p-1080.jpg 1080w, images/Screenshot-2024-03-25-at-14.23.23-p-1600.jpg 1600w, images/Screenshot-2024-03-25-at-14.23.23-p-2000.jpg 2000w, images/Screenshot-2024-03-25-at-14.23.23-p-2600.jpg 2600w, images/Screenshot-2024-03-25-at-14.23.23.jpg 2886w" alt="" class="image-4"></div>
-                </div>
-            </section>
-            <div class="footer background-color-seashell">
-                <div class="page-padding">
-                    <div class="container-large">
-                        <div class="padding-vertical padding-xxlarge">
-                            <div class="padding-bottom padding-xxlarge">
-                                <div class="w-layout-grid footer_top-wrapper">
-                                    <div class="footer_left-wrapper">
-                                        <div class="margin-bottom margin-large">
-                                            <a href="#" class="footer_logo-link w-nav-brand"><img src="images/Screenshot-2024-05-13-at-16.48.21.jpg" loading="lazy" width="258" sizes="(max-width: 479px) 90vw, 258px" alt="" srcset="images/Screenshot-2024-05-13-at-16.48.21-p-500.jpg 500w, images/Screenshot-2024-05-13-at-16.48.21-p-800.jpg 800w, images/Screenshot-2024-05-13-at-16.48.21.jpg 852w" class="image-3"></a>
-                                        </div>
-                                        <div class="w-layout-grid footer_social-list hidden">
-                                            <a href="#" class="footer_social-link w-inline-block">
-                                                <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z" fill="CurrentColor"></path>
-                                                    </svg></div>
-                                            </a>
-                                            <a href="#" class="footer_social-link w-inline-block">
-                                                <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z" fill="CurrentColor"></path>
-                                                    </svg></div>
-                                            </a>
-                                            <a href="#" class="footer_social-link w-inline-block">
-                                                <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20.9728 6.7174C20.5084 7.33692 19.947 7.87733 19.3103 8.31776C19.3103 8.47959 19.3103 8.64142 19.3103 8.81225C19.3154 11.7511 18.1415 14.5691 16.0518 16.6345C13.962 18.6999 11.1312 19.8399 8.19405 19.7989C6.49599 19.8046 4.81967 19.4169 3.29642 18.6661C3.21428 18.6302 3.16131 18.549 3.16162 18.4593V18.3604C3.16162 18.2313 3.26623 18.1267 3.39527 18.1267C5.06442 18.0716 6.67402 17.4929 7.99634 16.4724C6.48553 16.4419 5.12619 15.5469 4.5006 14.1707C4.46901 14.0956 4.47884 14.0093 4.52657 13.9432C4.57429 13.8771 4.653 13.8407 4.73425 13.8471C5.19342 13.8932 5.65718 13.8505 6.1002 13.7212C4.43239 13.375 3.17921 11.9904 2.99986 10.2957C2.99349 10.2144 3.02992 10.1357 3.096 10.0879C3.16207 10.0402 3.24824 10.0303 3.32338 10.062C3.77094 10.2595 4.25409 10.3635 4.74324 10.3676C3.28184 9.40846 2.65061 7.58405 3.20655 5.92622C3.26394 5.76513 3.40181 5.64612 3.5695 5.61294C3.73718 5.57975 3.90996 5.63728 4.02432 5.76439C5.99639 7.86325 8.70604 9.11396 11.5819 9.25279C11.5083 8.95885 11.4721 8.65676 11.4741 8.35372C11.501 6.76472 12.4842 5.34921 13.9634 4.76987C15.4425 4.19054 17.1249 4.56203 18.223 5.71044C18.9714 5.56785 19.695 5.31645 20.3707 4.96421C20.4202 4.93331 20.483 4.93331 20.5325 4.96421C20.5634 5.01373 20.5634 5.07652 20.5325 5.12604C20.2052 5.87552 19.6523 6.50412 18.9509 6.92419C19.5651 6.85296 20.1685 6.70807 20.7482 6.49264C20.797 6.45942 20.8611 6.45942 20.9099 6.49264C20.9508 6.51134 20.9814 6.54711 20.9935 6.59042C21.0056 6.63373 20.998 6.68018 20.9728 6.7174Z" fill="CurrentColor"></path>
-                                                    </svg></div>
-                                            </a>
-                                            <a href="#" class="footer_social-link w-inline-block">
-                                                <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="CurrentColor"></path>
-                                                    </svg></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="w-layout-grid footer_menu-wrapper">
-                                        <div class="footer_link-list">
-                                            <div class="text-block-36">Sitemap</div>
-                                            <a href="#" class="footer_link">Inicio</a>
-                                            <a href="#" class="footer_link">Parques Industriales</a>
-                                            <a href="#" class="footer_link">¿Qué hacemos?</a>
-                                            <a href="#" class="footer_link">Nosotros</a>
-                                            <a href="#" class="footer_link">Partner</a>
-                                            <a href="#" class="footer_link">Contacto</a>
-                                        </div>
-                                        <div id="w-node-_7983a060-dac0-f39c-1c59-2336815f18e6-875ea43f" class="footer_link-list">
-                                            <div class="text-block-36">Síguenos</div>
-                                            <a href="https://www.linkedin.com/company/loginparks/" target="_blank" class="link-block-2 w-inline-block"><img src="images/LinkedIn_logo_initials.png" loading="lazy" sizes="(max-width: 767px) 19.1953125px, (max-width: 991px) 2vw, (max-width: 1919px) 19.1953125px, 1vw" srcset="images/LinkedIn_logo_initials-p-500.png 500w, images/LinkedIn_logo_initials.png 600w" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="line-divider"></div>
-                            <div class="padding-top padding-medium">
-                                <div class="footer_bottom-wrapper">
-                                    <div class="footer_credit-text">© 2024 Log In.</div>
-                                    <div class="footer-designcomet_credit-text">Crafted with ♥️ by <a href="https://productosdigitales.mx" target="_blank" class="link-2"><span><strong class="bold-text">Productos Digitales</strong></span></a>
-                                    </div>
-                                    <div class="w-layout-grid footer_legal-list hidden">
-                                        <a href="#" class="footer_legal-link">Privacy Policy</a>
-                                        <a href="#" class="footer_legal-link">Terms of Service</a>
-                                        <a href="#" class="footer_legal-link">Cookies Settings</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65fde2499524450f875ea3ac" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="js/webflow.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        var mySwiper = new Swiper('#basic-swiper', {
-            slidesPerView: 4,
-            slidesPerGroup: 1,
-            loop: true,
-            spaceBetween: 0,
-            grabCursor: true,
-            allowTouchMove: true,
-            navigation: {
-                nextEl: '#right-button',
-                prevEl: '#left-button',
-            },
-            breakpoints: {
-                0: {
-                    /* when window >=0px - webflow mobile landscape/portriat */
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                    spaceBetween: 28,
-                },
-                480: {
-                    /* when window >=0px - webflow mobile landscape/portriat */
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                    spaceBetween: 28,
-                },
-                767: {
-                    /* when window >= 767px - webflow tablet */
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                    spaceBetween: 28,
-                },
-                992: {
-                    /* when window >= 988px - webflow desktop */
-                    slidesPerView: 4,
-                    slidesPerGroup: 1,
-                    spaceBetween: 0,
-                }
-            },
-        });
-
-    </script>
-</body>
+    });
+});
+</script></div><input type="submit" data-wait="Por favor espere..." id="w-node-_92e52198-d24b-eb01-451c-ec849ef8c325-875ea43f" class="button-secondary is-alternate w-button" value="Enviar"/></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div></div></div></section><section class="hidden"><div id="w-node-b7399cbe-0afe-dcad-1ac2-742f5a5195d8-875ea43f" class="w-layout-layout wf-layout-layout"><div id="w-node-b7399cbe-0afe-dcad-1ac2-742f5a5195d9-875ea43f" class="w-layout-cell"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dcfdf497e4b319a107b1_Screenshot%202024-03-25%20at%2014.22.17.jpg" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dcfdf497e4b319a107b1_Screenshot%202024-03-25%20at%2014.22.17-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dcfdf497e4b319a107b1_Screenshot%202024-03-25%20at%2014.22.17-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dcfdf497e4b319a107b1_Screenshot%202024-03-25%20at%2014.22.17-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dcfdf497e4b319a107b1_Screenshot%202024-03-25%20at%2014.22.17-p-1600.jpg 1600w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dcfdf497e4b319a107b1_Screenshot%202024-03-25%20at%2014.22.17.jpg 1738w" alt=""/></div><div id="w-node-b7399cbe-0afe-dcad-1ac2-742f5a5195da-875ea43f" class="w-layout-cell"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34.jpg" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34-p-1600.jpg 1600w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34-p-2000.jpg 2000w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34-p-2600.jpg 2600w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd0eb4ca4958b2cbfb8a_Screenshot%202024-03-25%20at%2014.22.34.jpg 2916w" alt="" class="image-5"/></div><div id="w-node-d8296910-348f-ca5c-cf57-85db8c99d307-875ea43f" class="w-layout-cell"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23.jpg" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23-p-1600.jpg 1600w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23-p-2000.jpg 2000w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23-p-2600.jpg 2600w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/6601dd4fc98bc7aedb2511e8_Screenshot%202024-03-25%20at%2014.23.23.jpg 2886w" alt="" class="image-4"/></div></div></section><div class="footer background-color-seashell"><div class="page-padding"><div class="container-large"><div class="padding-vertical padding-xxlarge"><div class="padding-bottom padding-xxlarge"><div class="w-layout-grid footer_top-wrapper"><div class="footer_left-wrapper"><div class="margin-bottom margin-large"><a href="#" class="footer_logo-link w-nav-brand"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/664298b89e9bc18a51c5561b_Screenshot%202024-05-13%20at%2016.48.21.jpg" loading="lazy" width="258" sizes="(max-width: 479px) 90vw, 258px" alt="" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/664298b89e9bc18a51c5561b_Screenshot%202024-05-13%20at%2016.48.21-p-500.jpg 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/664298b89e9bc18a51c5561b_Screenshot%202024-05-13%20at%2016.48.21-p-800.jpg 800w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/664298b89e9bc18a51c5561b_Screenshot%202024-05-13%20at%2016.48.21.jpg 852w" class="image-3"/></a></div><div class="w-layout-grid footer_social-list hidden"><a href="#" class="footer_social-link w-inline-block"><div class="social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z" fill="CurrentColor"/>
+</svg></div></a><a href="#" class="footer_social-link w-inline-block"><div class="social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z" fill="CurrentColor"/>
+</svg></div></a><a href="#" class="footer_social-link w-inline-block"><div class="social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.9728 6.7174C20.5084 7.33692 19.947 7.87733 19.3103 8.31776C19.3103 8.47959 19.3103 8.64142 19.3103 8.81225C19.3154 11.7511 18.1415 14.5691 16.0518 16.6345C13.962 18.6999 11.1312 19.8399 8.19405 19.7989C6.49599 19.8046 4.81967 19.4169 3.29642 18.6661C3.21428 18.6302 3.16131 18.549 3.16162 18.4593V18.3604C3.16162 18.2313 3.26623 18.1267 3.39527 18.1267C5.06442 18.0716 6.67402 17.4929 7.99634 16.4724C6.48553 16.4419 5.12619 15.5469 4.5006 14.1707C4.46901 14.0956 4.47884 14.0093 4.52657 13.9432C4.57429 13.8771 4.653 13.8407 4.73425 13.8471C5.19342 13.8932 5.65718 13.8505 6.1002 13.7212C4.43239 13.375 3.17921 11.9904 2.99986 10.2957C2.99349 10.2144 3.02992 10.1357 3.096 10.0879C3.16207 10.0402 3.24824 10.0303 3.32338 10.062C3.77094 10.2595 4.25409 10.3635 4.74324 10.3676C3.28184 9.40846 2.65061 7.58405 3.20655 5.92622C3.26394 5.76513 3.40181 5.64612 3.5695 5.61294C3.73718 5.57975 3.90996 5.63728 4.02432 5.76439C5.99639 7.86325 8.70604 9.11396 11.5819 9.25279C11.5083 8.95885 11.4721 8.65676 11.4741 8.35372C11.501 6.76472 12.4842 5.34921 13.9634 4.76987C15.4425 4.19054 17.1249 4.56203 18.223 5.71044C18.9714 5.56785 19.695 5.31645 20.3707 4.96421C20.4202 4.93331 20.483 4.93331 20.5325 4.96421C20.5634 5.01373 20.5634 5.07652 20.5325 5.12604C20.2052 5.87552 19.6523 6.50412 18.9509 6.92419C19.5651 6.85296 20.1685 6.70807 20.7482 6.49264C20.797 6.45942 20.8611 6.45942 20.9099 6.49264C20.9508 6.51134 20.9814 6.54711 20.9935 6.59042C21.0056 6.63373 20.998 6.68018 20.9728 6.7174Z" fill="CurrentColor"/>
+</svg></div></a><a href="#" class="footer_social-link w-inline-block"><div class="social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="CurrentColor"/>
+</svg></div></a></div></div><div class="w-layout-grid footer_menu-wrapper"><div class="footer_link-list"><div class="text-block-36">Sitemap</div><a href="#" class="footer_link">Inicio</a><a href="#" class="footer_link">Parques Industriales</a><a href="#" class="footer_link">¿Qué hacemos?</a><a href="#" class="footer_link">Nosotros</a><a href="#" class="footer_link">Partner</a><a href="#" class="footer_link">Contacto</a></div><div id="w-node-_7983a060-dac0-f39c-1c59-2336815f18e6-875ea43f" class="footer_link-list"><div class="text-block-36">Síguenos</div><a href="https://www.linkedin.com/company/loginparks/" target="_blank" class="link-block-2 w-inline-block"><img src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/663524eca997e1cd046ee865_LinkedIn_logo_initials.png" loading="lazy" sizes="(max-width: 767px) 19.1953125px, (max-width: 991px) 2vw, (max-width: 1919px) 19.1953125px, 1vw" srcset="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/663524eca997e1cd046ee865_LinkedIn_logo_initials-p-500.png 500w, https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/663524eca997e1cd046ee865_LinkedIn_logo_initials.png 600w" alt=""/></a></div></div></div></div><div class="line-divider"></div><div class="padding-top padding-medium"><div class="footer_bottom-wrapper"><div class="footer_credit-text">© 2024 Log In.</div><div class="footer-designcomet_credit-text">Crafted with ♥️ by <a href="https://productosdigitales.mx" target="_blank" class="link-2"><span><strong class="bold-text">Productos Digitales</strong></span></a></div><div class="w-layout-grid footer_legal-list hidden"><a href="#" class="footer_legal-link">Privacy Policy</a><a href="#" class="footer_legal-link">Terms of Service</a><a href="#" class="footer_legal-link">Cookies Settings</a></div></div></div></div></div></div></div></main></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65fde2499524450f875ea3ac" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/65fde2499524450f875ea3ac/js/webflow.5846a9e71.js" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+var mySwiper = new Swiper ('#basic-swiper', {
+slidesPerView: 4,
+ slidesPerGroup: 1,
+ loop: true,
+ spaceBetween: 0,
+ grabCursor:true,
+ allowTouchMove: true,
+ navigation: {
+ nextEl: '#right-button',
+ prevEl: '#left-button',
+},
+    breakpoints: {
+     0: { /* when window >=0px - webflow mobile landscape/portriat */
+         slidesPerView: 1,
+        slidesPerGroup:1,
+       spaceBetween: 28,
+     },
+         480: { /* when window >=0px - webflow mobile landscape/portriat */
+         slidesPerView: 1,
+        slidesPerGroup:1,
+       spaceBetween: 28,
+     },
+     767: { /* when window >= 767px - webflow tablet */
+           slidesPerView: 1,
+        slidesPerGroup:1,
+       spaceBetween: 28,
+     },
+     992: { /* when window >= 988px - webflow desktop */
+        slidesPerView: 4,
+        slidesPerGroup:1,
+       spaceBetween: 0,
+     }
+   },
+     });
+</script></body></html>
